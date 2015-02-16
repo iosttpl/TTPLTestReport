@@ -10,14 +10,14 @@
 	<string>TTPLTestReport</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>970D12E7C8F78F9ACC421B22C36CA82B88BB0368</key>
+		<key>814C8E1ABD1E47C688A2A3E0519386D26C82C384</key>
 		<string>github-iosttpl:iosttpl/TTPLTestReport.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Example/TTPLTestReport.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>970D12E7C8F78F9ACC421B22C36CA82B88BB0368</key>
+		<key>814C8E1ABD1E47C688A2A3E0519386D26C82C384</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>970D12E7C8F78F9ACC421B22C36CA82B88BB0368</string>
+	<string>814C8E1ABD1E47C688A2A3E0519386D26C82C384</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>970D12E7C8F78F9ACC421B22C36CA82B88BB0368</string>
+			<string>814C8E1ABD1E47C688A2A3E0519386D26C82C384</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TTPLTestReport</string>
 		</dict>
