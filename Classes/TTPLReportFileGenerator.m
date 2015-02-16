@@ -18,11 +18,15 @@
 + (BOOL)generateReportStringWithTestCaseDictionary:
             (NSMutableDictionary *)dictionary {
   NSString *reportString;
+  BOOL isReportGenerated;
   NSString *templateFilePath =
       [[NSBundle mainBundle] pathForResource:templateFileName ofType:nil];
   reportString = [[NSString alloc] initWithContentsOfFile:templateFilePath
                                                  encoding:NSUTF8StringEncoding
                                                     error:nil];
+  if (!reportString.length) {
+    return isReportGenerated;
+  }
 
   reportString = [self updateAppInfoWithReportString:reportString];
   /// Update test cases
@@ -30,7 +34,7 @@
       [self updateTestCaseOnReport:reportString testCaseDictionary:dictionary];
 
   /// Create html file
-  BOOL isReportGenerated = [self createReportFileWtihContent:reportString];
+  isReportGenerated = [self createReportFileWtihContent:reportString];
 
   return isReportGenerated;
 }
@@ -156,6 +160,7 @@
                   encoding:NSUTF8StringEncoding
                      error:&error];
   if (error) {
+    isReportGenerated = NO;
     NSLog(@"Report not generated : %@", error);
   } else {
     isReportGenerated = YES;
