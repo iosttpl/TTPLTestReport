@@ -18,7 +18,7 @@
 + (BOOL)generateReportStringWithTestCaseDictionary:
             (NSMutableDictionary *)dictionary {
   NSString *reportString;
-  BOOL isReportGenerated;
+  BOOL isReportGenerated = NO;
   NSString *templateFilePath =
       [[NSBundle mainBundle] pathForResource:templateFileName ofType:nil];
   reportString = [[NSString alloc] initWithContentsOfFile:templateFilePath

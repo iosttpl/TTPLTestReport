@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Classes/**/*'
   s.resource_bundles = {
-    'TTPLTestReport' => ['Pod/Assets/*.png']
+    'TTPLTestReport' => ['Classes/*.html','Classes/*.plist']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
