@@ -206,9 +206,16 @@
 
 + (NSBundle *)currentBundle {
   NSString *bundlePath =
-      [[NSBundle mainBundle] pathForResource:TRBundleName ofType:TRBundleType];
+      [[NSBundle mainBundle] pathForResource:@"TTPLTestReport"
+                                      ofType:@"bundle"];
 
   NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+
+  //  NSString *bundlePath =
+  //      [[NSBundle mainBundle] pathForResource:TRBundleName
+  //      ofType:TRBundleType];
+  //
+  //  NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
   return bundle;
 }
 @end
