@@ -1,8 +1,8 @@
 # TTPLTestReport
 
-[![CI Status](http://img.shields.io/travis/iosttpl/TTPLTestReport.svg?style=flat)](https://travis-ci.org/iosttpl/TTPLTestReport)
-[![Version](https://img.shields.io/cocoapods/v/TTPLTestReport.svg?style=flat)](http://cocoadocs.org/docsets/TTPLTestReport)
-[![License](https://img.shields.io/cocoapods/l/TTPLTestReport.svg?style=flat)](http://cocoadocs.org/docsets/TTPLTestReport)
+[![CI Status](https://img.shields.io/teamcity/http/teamcity.jetbrains.com/s/bt345.svg)](https://travis-ci.org/iosttpl/TTPLTestReport)
+[![Version](https://img.shields.io/github/release/qubyte/rubidium.svg)](http://cocoadocs.org/docsets/TTPLTestReport)
+[![License](https://img.shields.io/apm/l/vim-mode.svg)](http://cocoadocs.org/docsets/TTPLTestReport)
 [![Platform](https://img.shields.io/cocoapods/p/TTPLTestReport.svg?style=flat)](http://cocoadocs.org/docsets/TTPLTestReport)
 
 ## Usage
