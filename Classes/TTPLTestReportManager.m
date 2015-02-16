@@ -198,8 +198,7 @@
 #pragma mark - Report Generator -
 - (void)generateReport {
   dispatch_async(dispatch_get_main_queue(), ^{
-      NSDictionary *info =
-          [[TTPLReportFileGenerator currentBundle] infoDictionary];
+      NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
       NSString *appName = info[keyOfBundleName];
       UIAlertView *testerNameAlertView =
           [[UIAlertView alloc] initWithTitle:appName
@@ -221,8 +220,7 @@
       [MFMailComposeViewController canSendMail]) {
 
     /// Get app name
-    NSDictionary *info =
-        [[TTPLReportFileGenerator currentBundle] infoDictionary];
+    NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
     NSString *appName = info[keyOfBundleName];
 
     /// Open mail composer to send a report file

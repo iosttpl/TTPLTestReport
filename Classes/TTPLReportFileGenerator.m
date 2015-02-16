@@ -18,7 +18,7 @@
 + (BOOL)generateReportStringWithTestCaseDictionary:
             (NSMutableDictionary *)dictionary {
   NSString *reportString;
-  BOOL isReportGenerated;
+  BOOL isReportGenerated = NO;
   NSString *templateFilePath =
       [[self currentBundle] pathForResource:templateFileName ofType:nil];
   reportString = [[NSString alloc] initWithContentsOfFile:templateFilePath
@@ -42,7 +42,7 @@
 #pragma mark - Add App Info -
 + (NSString *)updateAppInfoWithReportString:(NSString *)reportString {
 
-  NSDictionary *info = [[self currentBundle] infoDictionary];
+  NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
   /// App name
   NSString *appName = info[keyOfBundleName];
   /// Version number  along with Build number.
