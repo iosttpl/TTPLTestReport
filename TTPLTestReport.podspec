@@ -23,6 +23,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Classes/**/*'
+  s.resources = ['Classes/*.html','Classes/*.plist']
   s.resource_bundles = {
     'TTPLTestReport' => ['Classes/*.html','Classes/*.plist']
   }
