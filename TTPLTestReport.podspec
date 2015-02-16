@@ -10,13 +10,8 @@
 Pod::Spec.new do |s|
   s.name             = "TTPLTestReport"
   s.version          = "0.1.0"
-  s.summary          = "A short description of TTPLTestReport."
-  s.description      = <<-DESC
-                       An optional longer description of TTPLTestReport
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
+  s.summary          = "This pod will generate test report file in HTML format."
+  s.description      = "This pod will generate test report file in HTML format. Once user double tap on the Test Report draggable view, it will generate the report file and open the email application attached with the report file."
   s.homepage         = "https://github.com/iosttpl/TTPLTestReport"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
@@ -27,7 +22,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Classes/**/*'
   s.resource_bundles = {
     'TTPLTestReport' => ['Pod/Assets/*.png']
   }
