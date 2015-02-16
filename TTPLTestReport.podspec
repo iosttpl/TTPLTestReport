@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TTPLTestReport"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "This pod will generate test report file in HTML format."
   s.description      = "This pod will generate test report file in HTML format. Once user double tap on the Test Report draggable view, it will generate the report file and open the email application attached with the report file."
   s.homepage         = "https://github.com/iosttpl/TTPLTestReport"
