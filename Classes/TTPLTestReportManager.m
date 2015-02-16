@@ -53,8 +53,9 @@
     /// This will hold all the TestCase objects.
     _testResultDictionary = [[NSMutableDictionary alloc] init];
     /// Path of the TTPLTestCase.plist file
-    NSString *path =
-        [[NSBundle mainBundle] pathForResource:testCaseListFileName ofType:nil];
+    NSString *path = [[TTPLReportFileGenerator currentBundle]
+        pathForResource:testCaseListFileName
+                 ofType:nil];
     _testCaseDictionary = [NSDictionary dictionaryWithContentsOfFile:path];
 
     _testCaseUpdateQueue = dispatch_queue_create(TRTestCaseUpdateQueue, 0);
@@ -197,7 +198,8 @@
 #pragma mark - Report Generator -
 - (void)generateReport {
   dispatch_async(dispatch_get_main_queue(), ^{
-      NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
+      NSDictionary *info =
+          [[TTPLReportFileGenerator currentBundle] infoDictionary];
       NSString *appName = info[keyOfBundleName];
       UIAlertView *testerNameAlertView =
           [[UIAlertView alloc] initWithTitle:appName
@@ -219,7 +221,8 @@
       [MFMailComposeViewController canSendMail]) {
 
     /// Get app name
-    NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
+    NSDictionary *info =
+        [[TTPLReportFileGenerator currentBundle] infoDictionary];
     NSString *appName = info[keyOfBundleName];
 
     /// Open mail composer to send a report file

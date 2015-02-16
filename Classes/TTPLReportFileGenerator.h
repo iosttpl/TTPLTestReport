@@ -47,4 +47,16 @@
  */
 + (NSString *)reportFilePath;
 
+/*!
+ @abstract Get the TTPLTestReport bundle
+
+ @discussion [NSBundle manibundle] won't work if you are using cocoapod this
+ library. So we need get the current "TTPLTestReport" bundle
+
+ @return TTPLTestReport bundle
+
+ @since 1.0
+ */
++ (NSBundle *)currentBundle;
+
 @end

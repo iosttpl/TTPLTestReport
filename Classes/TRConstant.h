@@ -20,8 +20,16 @@ static const BOOL disableReportGenerator = NO;
 static const BOOL enableReportButton = YES;
 
 //*****************************************************************************//
+//  Common
+//*****************************************************************************//
+#pragma mark - Common -
+static NSString *const TRBundleName = @"TTPLTestReport";
+static NSString *const TRBundleType = @"bundle";
+
+//*****************************************************************************//
 //  Queue Names
 //*****************************************************************************//
+#pragma mark - Queue Name -
 static char const *TRTestCaseUpdateQueue = "com.testCase.testCaseUpdateQueue";
 static char const *TRTestReportGeneratorQueue =
     "com.testCase.testReportGenerator";
