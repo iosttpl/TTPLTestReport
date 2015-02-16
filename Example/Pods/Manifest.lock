@@ -1,0 +1,14 @@
+PODS:
+  - TTPLTestReport (0.1.0)
+
+DEPENDENCIES:
+  - TTPLTestReport (from `../`)
+
+EXTERNAL SOURCES:
+  TTPLTestReport:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TTPLTestReport: 26c8df46a768539b3d941a1b367dec2bd0516b00
+
+COCOAPODS: 0.35.0
