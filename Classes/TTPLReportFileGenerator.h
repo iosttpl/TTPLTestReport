@@ -48,15 +48,16 @@
 + (NSString *)reportFilePath;
 
 /*!
- @abstract Get the TTPLTestReport bundle
+ @abstract Get the file path of the given file name with type TTPLTestReport
+ bundle / Current bundle.
 
  @discussion [NSBundle manibundle] won't work if you are using cocoapod this
- library. So we need get the current "TTPLTestReport" bundle
+ library. So we need get the current "TTPLTestReport" bundle.
 
- @return TTPLTestReport bundle
+ @return file path of the given file name.
 
  @since 1.0
  */
-+ (NSBundle *)currentBundle;
++ (NSString *)getFilePathFromBundleWithFileName:(NSString *)filename;
 
 @end

@@ -53,9 +53,8 @@
     /// This will hold all the TestCase objects.
     _testResultDictionary = [[NSMutableDictionary alloc] init];
     /// Path of the TTPLTestCase.plist file
-    NSString *path = [[TTPLReportFileGenerator currentBundle]
-        pathForResource:testCaseListFileName
-                 ofType:nil];
+    NSString *path = [TTPLReportFileGenerator
+        getFilePathFromBundleWithFileName:testCaseListFileName];
     _testCaseDictionary = [NSDictionary dictionaryWithContentsOfFile:path];
 
     _testCaseUpdateQueue = dispatch_queue_create(TRTestCaseUpdateQueue, 0);

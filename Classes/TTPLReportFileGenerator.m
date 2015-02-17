@@ -20,7 +20,7 @@
   NSString *reportString;
   BOOL isReportGenerated = NO;
   NSString *templateFilePath =
-      [[self currentBundle] pathForResource:templateFileName ofType:nil];
+      [self getFilePathFromBundleWithFileName:templateFileName];
   reportString = [[NSString alloc] initWithContentsOfFile:templateFilePath
                                                  encoding:NSUTF8StringEncoding
                                                     error:nil];
@@ -204,11 +204,15 @@
   return modelName;
 }
 
-+ (NSBundle *)currentBundle {
++ (NSString *)getFilePathFromBundleWithFileName:(NSString *)filename {
   NSString *bundlePath =
       [[NSBundle mainBundle] pathForResource:TRBundleName ofType:TRBundleType];
 
   NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
-  return bundle;
+  NSString *filePath = [bundle pathForResource:filename ofType:nil];
+  if (!filePath.length) {
+    filePath = [[NSBundle mainBundle] pathForResource:filename ofType:nil];
+  }
+  return filePath;
 }
 @end
